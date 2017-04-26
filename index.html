@@ -7,6 +7,8 @@
     <title>Loan Calculator</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
     <style type="text/css">
 	.button, .button:hover{
 	border: none;
@@ -53,10 +55,14 @@
 
         <h3 class="text-center">Check your personalised rate</h3>
         <form>
+
+        <input type="number" id="range_33"></input> 
+
+
           <div class="row">
             <div class="large-6 medium-6 columns">
               <label>Loan amount</label>
-              <input type="text" placeholder="$0" />
+              <input type="text" placeholder="$0" id="loan-mount" />
             </div>
             <div class="large-6 medium-6 columns">
               <label>Loan duration</label>
@@ -125,5 +131,21 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script>
+$("#range_33").ionRangeSlider({
+    min: 5000,
+    max: 35000,
+    from: 10000,
+    from_min: 5000,
+    from_max: 35000,
+    grid: true,
+	prefix: "$",
+	onChange: function (data) {
+		console.log(data);
+        $("#loan-mount").val("$"+data.from);
+    },
+});
+</script>
   </body>
 </html>
