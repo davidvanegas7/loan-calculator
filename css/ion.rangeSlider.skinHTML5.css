@@ -37,7 +37,7 @@
     border-bottom: 1px solid #428bca;
     background: #00bac6;
     /*background: linear-gradient(to top, rgba(0,186,198,1) 0%,rgba(127,195,232,1) 100%);*/
-    background: linear-gradient(to top, rgba(0,186,198,1) 0%,rgba(0,195,232,1) 100%)
+    background: linear-gradient(to top, rgba(0,186,198,1) 0%, #0083c0 100%)
 }
     .irs-bar-edge {
         height: 10px; top: 33px;
@@ -45,7 +45,7 @@
         border: 1px solid #428bca;
         border-right: 0;
         background: #428bca;
-        background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */
+        background: linear-gradient(to top, rgba(66,139,202,1) 0%, #0083c0 100%); /* W3C */
         border-radius: 16px 0 0 16px;
         -moz-border-radius: 16px 0 0 16px;
     }
@@ -97,7 +97,7 @@
     font-size: 14px; line-height: 1.333;
     text-shadow: none;
     padding: 1px 5px;
-    background: #00bac6;
+    background: #0083c0;
     border-radius: 3px;
     -moz-border-radius: 3px;
 }
